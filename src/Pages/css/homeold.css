@@ -1,0 +1,263 @@
+/* Top Section CSS */
+.top-section {
+    height: 100vh;
+    margin-top: 0%;
+}
+
+.top-section-intro{
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+    padding: 0% 5% 5% 2%;
+    font-size: 110%;
+}
+
+.wrapper-image-intro {
+    /* The image used */
+    background-image: url("../images/background5.png");
+    width: 100%;
+
+    /* Center and scale the image nicely */
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.image-intro {
+    width: -webkit-fill-available;
+}
+
+.intro {
+    direction: rtl;
+    animation: fadeInRight 1s ease-in-out;
+    color: white;
+    font-size: 110%;
+}
+
+.intro-title {
+    color: white;
+}
+
+.home-button {
+    color: white;
+    font-weight: 700;
+    width: 60%;
+    margin-right: 5%;
+    margin-top: 4%;
+}
+
+/* Middle Section CSS */
+
+.middle-section {
+    background: white;
+    height: 100%;
+}
+
+.steps {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 5%;
+}
+
+.step {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin-bottom: 5%;
+}
+
+.step-right {
+    padding-left: 2%;
+}
+
+.step-left {
+    padding-right: 4%;
+}
+
+.step-content {
+    direction: rtl;
+    width: 40%;
+}
+
+.step-title {
+    font-size: 170%;
+    font-weight: 600;
+    font-family: Roboto, sans-serif;
+    line-height: 1.235;
+    background-image: linear-gradient(45deg, #f401f8, #5a80ff);
+    background-size: 100%;
+    background-repeat: repeat;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-bottom: 3%;
+}
+
+.step-describtion {
+    /* color: #979cb0; */
+    color: #393c45;
+    font-weight: 600;
+    font-size: 120%;
+    letter-spacing: 0.64px;
+    margin: 0px;
+    line-height: 1.5em;
+    font-family: Roboto, sans-serif;
+}
+
+.step-img-wrapper {
+    width: 25%;
+}
+
+.step-img {
+    width: -webkit-fill-available;
+}
+
+.img-right {
+    padding: 1% 0% 0% 2%;
+}
+
+.img-left {
+    padding: 1% 2% 0% 0%;
+}
+
+.dot {
+    content: "";
+    background: rgb(103, 58, 183);
+    border: 6px solid rgb(103, 58, 183);
+    border-radius: 50%;
+    width: 0%;
+}
+
+.custom-shape-divider-top {
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+}
+
+.custom-shape-divider-top svg {
+    position: relative;
+    display: block;
+    width: calc(114% + 1.3px);
+    height: 144px;
+}
+
+.custom-shape-divider-top .shape-fill {
+    fill: #242a40;
+}
+
+.css-gwc7y6 {
+    background-color: transparent;
+    border: transparent;
+}
+
+.css-gwc7y7 {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+    -webkit-tap-highlight-color: transparent;
+    outline: 0px;
+    border: 0px;
+    margin: 0px;
+    cursor: pointer;
+    user-select: none;
+    vertical-align: middle;
+    appearance: none;
+    text-decoration: none;
+    text-transform: capitalize;
+    font-family: Roboto, sans-serif;
+    font-weight: 500;
+    font-size: 0.875rem;
+    line-height: 1.75;
+    min-height: 36px;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms, box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms, border-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+    padding: 0px;
+    min-width: 0px;
+    width: 48px;
+    height: 48px;
+    color: rgb(255, 255, 255);
+    background-color: rgb(76 202 90);
+    border-radius: 50% 50% 4px;
+    top: 90%;
+    position: fixed;
+    right: 10px;
+    z-index: 1050;
+    box-shadow: rgba(103, 58, 183, 0.3) 0px 12px 14px 0px;
+}
+
+.css-1do9gth {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    box-sizing: border-box;
+    -webkit-tap-highlight-color: transparent;
+    background-color: transparent;
+    outline: 0px;
+    border: 0px;
+    margin: 0px;
+    cursor: pointer;
+    user-select: none;
+    vertical-align: middle;
+    appearance: none;
+    text-decoration: none;
+    text-align: center;
+    flex: 0 0 auto;
+    border-radius: 50%;
+    overflow: visible;
+    transition: background-color 150ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+    color: inherit;
+    padding: 12px;
+    font-size: 1.75rem;
+}
+
+/* Third Section CSS */
+.third-section {
+    background-color: white;
+}
+
+.get-started-wrapper {
+    background-color: #242a40;
+    text-align: center;
+}
+
+.get-started-button {
+    background: linear-gradient(90deg, #00D2D2 29%, #4FACFE 100%);
+    border-radius: 26px 26px 26px 26px;
+    font-size: 120%;
+    font-weight: 500;
+    border: transparent;
+    cursor: pointer;
+    box-shadow: 0 10px 20px -8px rgb(0 0 0 / 70%);
+
+    margin-top: 5%;
+    margin-bottom: 5%;
+    padding: 1.5% !important;
+    transition: background-color 2s;
+    width: 50%;
+    color: white;
+    font-weight: 600;
+}
+
+  
+.get-started-button:hover{
+    background: linear-gradient(90deg, #00d28e 29%, #6afe4f 100%);
+    animation: slidebg 4s linear infinite;
+}
+    
+@keyframes slidebg {
+    to {
+        background-position: 100vw;
+    }
+}
+
+/* Why us */
+.why-us {
+    margin: auto;
+    width: 95%;
+    direction: rtl;
+    margin-top: 5%;
+    margin-bottom: 10%;
+}

@@ -1,0 +1,22 @@
+version: "3"
+volumes:
+  efs:
+    name: efs
+    driver_opts:
+      type: nfs
+      o: addr=backend.webittoday.com
+      device: :/home/ec2-user/app/builds
+
+services:
+  nginx-react:
+    image: siteup:latest
+    container_name: siteup
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - 80:80
+    volumes:
+      - efs:/mnt/efs
+    environment:
+      NODE_ENV: production

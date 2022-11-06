@@ -1,0 +1,335 @@
+html {
+  /* background-color: rgb(51 56 78); */
+  background-color: white;
+
+  /* The image used */
+  background-image: url("./Pages/images/background0.png");
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  
+  margin: 0;
+  font-size: 16px;
+  color:white;
+}
+
+.outer-wrapper{
+  height: 100%;
+}
+
+
+
+
+/* Titles */
+
+h1 {
+  color: #43b1f7;
+}
+
+
+
+
+
+/* Buttons */
+
+.home-button {
+  background: linear-gradient(90deg, #00D2D2 29%, #4FACFE 100%);
+  border-radius: 26px 26px 26px 26px;
+  font-size: 17px;
+  font-weight: 500;
+  padding: 2.3%;
+  border: transparent;
+  cursor: pointer;
+  box-shadow: 0 10px 20px -8px rgba(0, 0, 0,.7);
+  font-size: 100%;
+}
+
+.home-button{
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.home-button:after {
+  content: '»';
+  position: absolute;
+  opacity: 0;  
+  top: 11px * 30%;
+  left: 20px;
+  transition: 0.5s;
+}
+
+.home-button:hover{
+  padding-right: 8px;
+  padding-left: 24px;
+}
+
+.home-button:hover:after {
+  opacity: 1;
+  left: 10px;
+}
+
+
+
+
+
+
+/* Styles */
+.bold {
+  font-weight: 700;
+}
+
+
+
+
+
+/* Fades */
+.from-right-fade {
+  animation: fadeInRight 1.5s ease-in-out;
+}
+
+.from-left-fade {
+  animation: fadeInLeft 1.5s ease-in-out;
+}
+
+.fade-in { 
+  animation: fadeIn 3.5s;
+}
+
+
+.float-object {
+	transform: translatey(10px);
+  animation: float 6s ease-in-out infinite;
+}
+
+
+@keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+@keyframes fadeInRight {
+  from {
+    opacity: 0;
+    transform: translateX(300px);
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeInLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-300px);
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes float {
+	0% {
+		transform: translatey(15px);
+	}
+	50% {
+		transform: translatey(-15px);
+	}
+	100% {
+		transform: translatey(15px);
+	}
+}
+
+
+/* Phone */
+
+@media screen and (max-width: 350px) and (min-width: 0px) {
+  html {
+    font-size: 8px !important;
+  }
+
+  .leaderboard header .leaderboard__title--top {
+    font-size: 90% !important;
+  }
+
+  .leaderboard {
+    max-width: 65% !important;
+  }
+
+  .leaderboard__name {
+    font-size: 70% !important;
+  }
+}
+
+@media screen and (max-width: 420px) and (min-width: 350px) {
+  html {
+    font-size: 10px !important;
+  }
+
+  .leaderboard {
+    max-width: 60% !important;
+  }
+
+  .leaderboard__name {
+    font-size: 70% !important;
+  }
+}
+
+@media screen and (max-width: 470px) and (min-width: 420px) {
+  html {
+    font-size: 10px !important;
+  }
+
+  .leaderboard {
+    max-width: 53% !important;
+  }
+
+  .leaderboard__name {
+    font-size: 75% !important;
+  }
+}
+
+@media screen and (max-width: 540px) and (min-width: 470px) {
+  html {
+    font-size: 10px !important;
+  }
+
+  .leaderboard {
+    max-width: 53% !important;
+  }
+
+  .leaderboard__name {
+    font-size: 75% !important;
+  }
+}
+
+@media screen and (max-width: 540px) and (min-width: 350px) {
+  html {
+    font-size: 10px !important;
+  }
+
+  .leaderboard header .leaderboard__title--top {
+    font-size: 100% !important;
+  }
+}
+
+
+@media screen and (max-width: 630px) {
+  html {
+    font-size: 12px;
+  }
+
+  .top-section-intro {
+    display: flex;
+    flex-direction: column !important;
+    height: 50%;
+    padding: 0% 5% 5% 2%;
+    font-size: 110%;
+  }
+
+  .wrapper-image-intro {
+    background-image: url("../src/Pages/images/background5.png");
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 30%;
+}
+  .home-button-wrapper {
+    /* text-align: center;
+    padding-left: 5%; */
+    display: none;
+  }
+
+  .top-section {
+    height: 51vh !important;
+  }
+
+  .contact-us-form {
+    padding-left: 10%;
+  }
+
+  .contact-us {
+    flex-direction: column !important;
+  }
+
+  .leaderboard header {
+    height: 90px !important;
+  }
+
+  .step-describtion {
+    font-size: 100% !important;
+  }
+
+  .from-right-fade-phone {
+    animation: fadeInRight 1.5s ease-in-out;
+  }
+  
+  .from-left-fade-phone {
+    animation: fadeInLeft 1.5s ease-in-out;
+  }
+  
+  .fade-in-phone { 
+    animation: fadeIn 3.5s;
+  }
+  
+}
+
+@media screen and (max-width: 650px) and (min-width: 540px){
+  .leaderboard {
+    max-width: 47% !important;
+  }
+
+  .leaderboard__name {
+    font-size: 75% !important;
+  }
+}
+
+
+@media screen and (max-width: 830px) and (min-width: 650px) {
+  .leaderboard {
+    max-width: 45% !important;
+  }
+}
+
+@media screen and (max-width: 730px) and (min-width: 630px) {
+  html {
+    font-size: 12px;
+  }
+}
+
+@media screen and (max-width: 830px) and (min-width: 730px) {
+  html {
+    font-size: 14px;
+  }
+}
+
+@media screen and (max-width: 1000px) and (min-width: 830px) {
+  .leaderboard {
+    max-width: 43% !important;
+  }
+}
+
+@media screen and (max-width: 1100px) and (min-width: 1000px) {
+  .leaderboard {
+    max-width: 38% !important;
+  }
+}
+
+@media screen and (max-width: 830px) {
+  .custom-shape-divider-top svg {
+    height: 81px !important;
+  }
+
+  .custom-shape-divider-bottom-1666982974 svg {
+    height: 40px !important;
+  }
+}
+
+@media screen and (max-width: 630px) and (max-height: 700px) {
+  .top-section {
+    height: 64vh !important;
+  }
+}

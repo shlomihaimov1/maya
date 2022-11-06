@@ -1,0 +1,264 @@
+.footer {
+    flex-shrink: 0;
+    direction: rtl;
+    margin: auto;
+    width: 100%;
+    align-content: center;
+
+    color: white;
+    background: #242a40;
+    height: -webkit-fill-available;
+}
+
+.bottom-menu {
+    width: fit-content;
+    margin: auto;
+    padding: 15px;
+}
+
+.icons {
+    width: fit-content;
+    margin: auto;
+}
+
+.icon-link {
+    padding: 0px 5px 0px 5px;
+}
+
+.footfooter-wrapper {
+    margin: auto;
+    width: 95%;
+}
+
+.footfooter {
+  margin: auto;
+  width: inherit;
+  color: white;
+  background-color: transparent;
+  height: -moz-fit-content;
+  height: fit-content;
+  text-align: center;
+  padding: 7px;
+  font-size: small;
+  margin-top: 10px;
+  border-style: solid;
+  border-width: 1px 0 0;
+  margin-top: 0;
+  margin-bottom: -9px;
+  display: flex;
+  flex-direction: row;
+  height: -webkit-fill-available;
+  direction: rtl;
+  height: fit-content;
+}
+
+.credits {
+    font-size: 80%;
+    width: 80%;
+}
+
+.siteuponly {
+    font-size: 60%;
+    line-height: 25px;
+}
+
+
+/* Footer Wave */
+.custom-shape-divider-bottom-1666982974 {
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+}
+
+.custom-shape-divider-bottom-1666982974 svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 74px;
+}
+
+.custom-shape-divider-bottom-1666982974 .shape-fill {
+    fill: #242A40;
+}
+
+
+/* Contact us */
+.contact-us-wrapper {
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+    justify-content: center;
+    /* padding-top: 5%;
+    padding-bottom: 5%; */
+    height: -webkit-fill-available;
+    direction: rtl;
+
+    padding-top: 5%;
+    padding-bottom: 10%;
+}
+
+.contact-us-form {
+    width: -webkit-fill-available;
+    padding-left: 15%;
+}
+
+.contact-us {
+    display: flex;
+    flex-direction: row;
+}
+
+.contact-us-title {
+    width: -webkit-fill-available;
+    /* color: #e8f9fe; */
+    font-family: 'Assistant', Arial, sans-serif;
+    font-weight: 700;
+    font-size: 170%;
+    text-transform: none;
+    letter-spacing: 0px;
+    font-style: normal;
+    line-height: 1.3em;
+    text-align: center;
+
+    background-image: linear-gradient(45deg, #f401f8, #5a80ff);
+    background-size: 100%;
+    background-repeat: repeat;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.submit-contact {
+  background-color: #242a40b5;
+  border-color: #03aeba;
+  
+  font-size: 120%;
+  letter-spacing: 2px;
+  border-style: solid;
+  border-width: 3px;
+  border-radius: 34px 34px 34px 34px;
+  padding: 2.5% 7%;
+  font-weight: bolder;
+  cursor: pointer;
+  margin-top: 5%;
+  color: white;
+}
+
+.submit-contact:hover {
+    opacity: 0.8;
+}
+
+/* Warning popup */
+.warning {
+  width: 100%;
+  text-align: center;
+}
+
+.warning-text {
+  background-color: #ee72729c;
+  padding: 5px;
+  font-weight: 600;
+}
+
+/* Full-width input fields */
+.input-contact {
+    /* background-color: #fff; */
+    background-color: #9186cd42;
+    border-color: #bfd0d7;
+    border-width: 2px;
+    border-radius: 22px 22px 22px 22px;
+    padding: 1.5%;
+    margin: 1%;
+
+    color: #7c8299;
+    font-weight: 600;
+    font-size: 75%;
+    letter-spacing: 0.5px;
+    line-height: 1.5em;
+    font-family: Roboto, sans-serif;
+}
+
+.input-contact[type=text], .input-contact[type=password] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+  border-radius: 20px;
+}
+
+/* Set a style for all buttons */
+.button-contact {
+  background-color: #d89f9f;
+  color: white;
+  padding: 14px 20px;
+  margin: 15px 0;
+  border: none;
+  cursor: pointer;
+  width: 80%;
+  border-radius: 25px;
+  margin-left: 10%;
+}
+
+.button-contact:hover {
+  opacity: 0.8;
+}
+
+/* Extra styles for the cancel button */
+
+
+.container {
+  padding: 16px;
+}
+
+span.psw {
+  float: right;
+  padding-top: 16px;
+}
+
+/* The Close Button (x) */
+.close {
+  position: absolute;
+  right: 25px;
+  top: 0;
+  color: #000;
+  font-size: 35px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: red;
+  cursor: pointer;
+}
+
+/* Add Zoom Animation */
+.animate {
+  -webkit-animation: animatezoom 0.6s;
+  animation: animatezoom 0.6s
+}
+
+@-webkit-keyframes animatezoom {
+  from {-webkit-transform: scale(0)} 
+  to {-webkit-transform: scale(1)}
+}
+  
+@keyframes animatezoom {
+  from {transform: scale(0)} 
+  to {transform: scale(1)}
+}
+
+/* Change styles for span and cancel button on extra small screens */
+@media screen and (max-width: 300px) {
+  span.psw {
+     display: block;
+     float: none;
+  }
+  .cancelbtn {
+     width: 100%;
+  }
+}
+
+.subimitation {
+    align-items: center;
+}
